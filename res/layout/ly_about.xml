@@ -2,97 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:gravity="bottom|center_horizontal"
+    android:background="@drawable/acerca_de2"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical" >
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" >
 
-        <ScrollView
-            android:id="@+id/scrollView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp" >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Colombia SiVigila v1.0"
-                    android:textAppearance="@style/normaltext"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Ministerio de Salud y Protección Social"
-                    android:textAppearance="@style/normaltext"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2013"
-                    android:textAppearance="@style/normaltext"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Logos"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Desarrollado por: iPro Developers"
-                    android:textAppearance="@style/normaltext"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:text="(Carlos Enrique Diaz, Miguel Ruiz, Jose Luis Bermudez)"
-                    android:textAppearance="@style/normaltext"
-                    android:textColor="#000000" />
-            </LinearLayout>
-        </ScrollView>
-
-        <Button
-            android:id="@+id/btnrevision"
-            style="?android:attr/buttonStyleSmall"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="    Intro    " />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnrevision"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    Intro    " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgAtrasAcerca"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/atras"
+                android:visibility="visible" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imgAtrasAcerca"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:layout_marginBottom="60dp"
-        android:src="@drawable/atras"
-        android:visibility="visible" />
 
 </LinearLayout>

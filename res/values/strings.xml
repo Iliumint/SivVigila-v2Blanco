@@ -19,7 +19,7 @@
     <string name="title_activity_listar_resultados">ListarResultados</string>
     <string name="title_activity_pantalla_principal">PantallaPrincipal</string>
     <string name="title_activity_generalidades">Generalidades</string>
-    <string name="title_activity_apoyo">Apoyo Diagnostico</string>
+    <string name="title_activity_apoyo">Apoyo Diagnóstico</string>
     <string name="title_activity_diagnostico_diferencial">Diagnostico Diferencial</string>
     <string name="title_activity_acciones_salud">Acciones de Control</string>
     <string name="title_activity_saludo_inicial">Colombia SiVigila</string>
@@ -37,16 +37,12 @@ Este aplicativo al ser una herramienta flexible, se adapta a las necesidades cam
     <string name="parrafo2">Este aplicativo cuenta con un numero inicial de eventos el cual esta en constante actualización debido a la naturaleza dinámica del sistema sivigila y la aparición de nuevos eventos,  en este sentido los protocolos de vigilancia y control no contemplados en el presente aplicativo, se encuentran en proceso de elaboración y/o ajuste por parte de las autoridades competentes.</string>
     <string name="parrafo3">Este aplicativo al ser una herramienta flexible, se adapta a las necesidades cambiantes de la vigilancia en salud pública, por lo que permite la actualización de la información en los momentos que se requiera, sea que se introduzcan otros protocolos para vigilar nuevos eventos o que se realicen ajustes los protocolos de vigilancia epidemiológica vigentes”.</string>
     <string name="title_activity_actores_resultados">Actores y Responsables</string>
-    
-    
     <string name="actor1">Ministerio de Salud y Protección Social MSPS</string>
     <string name="actor2">Instituto Nacional de Vigilancia de Medicamentos y Alimentos INVIMA</string>
     <string name="actor3">Instituto Nacional de Salud INS</string>
     <string name="actor4">Entidades Administradoras de Planes de Beneficios de Salud</string>
     <string name="actor5">Unidades Notificadoras y Unidades Primarias Generadoras de Datos</string>
     <string name="actor6">Entidades Territoriales de Salud ETS</string>
-    
-    
     <string name="p0">INTRODUCCIÓN A SIVIGILA</string>
     <string name="p1">El presente aplicativo móvil se desarrolla en el marco del Sistema de Vigilancia en Salud, en lo referido a la dimensión de Vigilancia en Salud Pública en el componente de Vigilancia epidemiológica, con énfasis en las estrategias de notificación de casos predefinidos y vigilancia por búsqueda secundaria de registros administrativos.</string>
     <string name="p2">A continuación se realiza una breve descripción del Sistema de Vigilancia en Salud Colombiano, el cual esta integrado por 2 dimensiones principales: La Vigilancia en Salud Pública y La Vigilancia Sanitaria.</string>
@@ -63,8 +59,12 @@ Este aplicativo al ser una herramienta flexible, se adapta a las necesidades cam
     <string name="p13">Para el desarrollo de las dos dimensiones citadas, se despliegan una serie estrategias básicas, las cuales se citan a continuación: </string>
     <string name="p14">INCLUSIÓN APERTURA DEL APP</string>
     <string name="p15">INCLUSIÓN APERTURA DEL APP</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
     
-    
-    
+    <string name="in1">El aplicativo Colombia Si Vigila, es una iniciativa desarrollada por Ministerio de Salud y Protección Social - MSPS, y el Instituto Nacional de Salud-INS, que brinda información al personal de salud sobre cuáles son los eventos objeto de vigilancia y cuáles son los protocolos para realizarla, protocolos que tienen una actualización dinámica.</string>
+    <string name="dp1">Diapositiva No.1 </string>
+    <string name="tx1">En Colombia el Sistema de Vigilancia en Salud está integrado por Vigilancia en Salud Pública y Vigilancia Sanitaria:</string>
+    <string name="dp2">Diapositiva No.2 </string>
+    <string name="tx2">Opera mediante cinco estrategias de vigilancia</string>
 
 </resources>

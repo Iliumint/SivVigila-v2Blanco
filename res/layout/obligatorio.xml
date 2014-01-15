@@ -49,36 +49,24 @@
                 android:textColor="#70BECD" />
 
             <TextView
-                android:id="@+id/pp1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/parrafo1"                
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/pp2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/parrafo2"                
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
                 android:id="@+id/ac1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/p1"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
+                android:text="@string/in1"
+                android:textAppearance="@style/normaltext"
+                android:textColor="#000000" />
 
             <TextView
                 android:id="@+id/ac2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/p2"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
+                android:text="@string/dp1"
+                android:textAppearance="@style/normaltext"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/ac3"
@@ -88,100 +76,51 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="15dp"
-                android:text="@string/p3"
-                android:textAppearance="@style/subtitulos"
-                android:textColor="#70BECD" />
+                android:text="@string/tx1"
+                android:textAppearance="@style/normaltext"
+                android:textColor="#000000" />
 
-            <TextView
-                android:id="@+id/ac4"
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p4"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
+                android:src="@drawable/diapo1_1" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/diapo1_2" />
+            
+             <TextView
+                 android:id="@+id/ac4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:text="@string/dp2"
+                 android:textAppearance="@style/normaltext"
+                 android:textColor="#000000"
+                 android:textStyle="bold"
+                 android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/ac5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p5"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/ac6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p6"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/ac7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p7"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/ac8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="15dp"
-                android:text="@string/p8"
-                android:textAppearance="@style/subtitulos"
-                android:textColor="#70BECD" />
-
-            <TextView
-                android:id="@+id/ac9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p9"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/ac10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p10"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/ac11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p11"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/ac12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p12"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
-
-            <TextView
-                android:id="@+id/ac13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/p13"
-                android:textColor="#000000" android:textAppearance="@style/normaltext" />
+                android:text="@string/tx2"
+                android:textAppearance="@style/normaltext"
+                android:textColor="#000000" />
 
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/diagrama_krystel" />
+                android:src="@drawable/diapo2" />
 
         </LinearLayout>
 

@@ -112,7 +112,7 @@ public final class R {
         public static final int TxtDominio=0x7f09006e;
         public static final int TxtSubTema=0x7f090072;
         public static final int TxtTema=0x7f090070;
-        public static final int aboutdt=0x7f090087;
+        public static final int aboutdt=0x7f090089;
         public static final int ac0=0x7f090040;
         public static final int ac1=0x7f090034;
         public static final int ac10=0x7f09004c;
@@ -127,20 +127,21 @@ public final class R {
         public static final int ac7=0x7f090049;
         public static final int ac8=0x7f09004a;
         public static final int ac9=0x7f09004b;
-        public static final int action_settings=0x7f090082;
-        public static final int action_shared=0x7f090089;
-        public static final int actualizarDBmenu=0x7f090088;
-        public static final int atras_actores=0x7f090083;
-        public static final int atras_direc=0x7f090084;
-        public static final int atras_gen=0x7f090081;
+        public static final int action_settings=0x7f090084;
+        public static final int action_shared=0x7f09008b;
+        public static final int actualizarDBmenu=0x7f09008a;
+        public static final int atras_actores=0x7f090085;
+        public static final int atras_direc=0x7f090086;
+        public static final int atras_gen=0x7f090083;
         public static final int btnAtras=0x7f09002b;
         public static final int btnBuscar=0x7f090002;
         public static final int btnOmitir=0x7f09003f;
         public static final int btnrevision=0x7f090032;
-        public static final int buscar=0x7f090085;
-        public static final int comparit=0x7f09008a;
+        public static final int buscar=0x7f090087;
+        public static final int comparit=0x7f09008c;
         public static final int contenedor=0x7f09005e;
         public static final int directorio2=0x7f09005b;
+        public static final int icono=0x7f090076;
         public static final int imageAPPrincipal=0x7f090051;
         public static final int imageHELP=0x7f090050;
         public static final int imageView1=0x7f090046;
@@ -159,7 +160,7 @@ public final class R {
         public static final int imgNoTrasmisibles=0x7f09003b;
         public static final int imgTrasmisibles=0x7f09003a;
         public static final int imgVoz=0x7f090003;
-        public static final int imgatras=0x7f090080;
+        public static final int imgatras=0x7f090082;
         public static final int linearLayout1=0x7f09006a;
         public static final int listBuscar=0x7f090004;
         public static final int listExternas=0x7f090006;
@@ -181,9 +182,9 @@ public final class R {
         public static final int pp1=0x7f090047;
         public static final int pp2=0x7f090048;
         public static final int progressBar1=0x7f090035;
-        public static final int salirAtras=0x7f090086;
+        public static final int salirAtras=0x7f090088;
         public static final int scrollView1=0x7f090012;
-        public static final int spinDirectorio=0x7f090075;
+        public static final int spinDirectorio=0x7f090077;
         public static final int spinNomEven=0x7f090031;
         public static final int spinTrans=0x7f09000b;
         public static final int spinnerExterna=0x7f090005;
@@ -198,15 +199,16 @@ public final class R {
         public static final int textView1=0x7f09000a;
         public static final int textView2=0x7f09000c;
         public static final int textinf=0x7f09005a;
-        public static final int textoCiu=0x7f090078;
-        public static final int textoCiudad=0x7f090079;
-        public static final int textoDir=0x7f09007a;
-        public static final int textoEnt=0x7f090076;
-        public static final int textoEntidad=0x7f090077;
-        public static final int textoMail=0x7f09007c;
+        public static final int texto=0x7f090075;
+        public static final int textoCiu=0x7f09007a;
+        public static final int textoCiudad=0x7f09007b;
+        public static final int textoDir=0x7f09007c;
+        public static final int textoEnt=0x7f090078;
+        public static final int textoEntidad=0x7f090079;
+        public static final int textoMail=0x7f09007e;
         public static final int textoRefer=0x7f09006c;
         public static final int textoSubtema=0x7f09000f;
-        public static final int textoTel=0x7f09007e;
+        public static final int textoTel=0x7f090080;
         public static final int textsup=0x7f090058;
         public static final int tx_accColect=0x7f090055;
         public static final int tx_accIndivi=0x7f090053;
@@ -216,10 +218,10 @@ public final class R {
         public static final int tx_fichaNotif=0x7f090063;
         public static final int tx_timenotif=0x7f090061;
         public static final int txtBusqueda=0x7f090000;
-        public static final int txtDir2=0x7f09007b;
+        public static final int txtDir2=0x7f09007d;
         public static final int txtGenralDescrip=0x7f090013;
-        public static final int txtTel=0x7f09007f;
-        public static final int txtmail22=0x7f09007d;
+        public static final int txtTel=0x7f090081;
+        public static final int txtmail22=0x7f09007f;
         public static final int webView=0x7f090014;
     }
     public static final class layout {
@@ -250,8 +252,10 @@ public final class R {
         public static final int prueba_margenes=0x7f030018;
         public static final int referlista_negra=0x7f030019;
         public static final int result_busqueda_generalidades=0x7f03001a;
-        public static final int tabla=0x7f03001b;
-        public static final int textospinnernegro=0x7f03001c;
+        public static final int spinner_lista=0x7f03001b;
+        public static final int spinner_listatexto=0x7f03001c;
+        public static final int tabla=0x7f03001d;
+        public static final int textospinnernegro=0x7f03001e;
     }
     public static final class menu {
         public static final int acciones_salud=0x7f080000;

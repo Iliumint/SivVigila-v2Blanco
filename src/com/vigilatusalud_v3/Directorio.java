@@ -136,7 +136,9 @@ public class Directorio extends Activity {
 		lugares.addAll(hs);
 		Collections.sort(lugares);
 		
-		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lugares);
+//		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lugares);
+		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.spinner_listatexto, lugares);
+//		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.spinner_lista, lugares);
 		departamentos.setAdapter(adapter);//		
 	}
 	

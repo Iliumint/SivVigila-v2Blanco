@@ -216,7 +216,8 @@ public class ListarResultados extends Activity {
 	{
 		ArrayAdapter<String> adaptador;
 		try {
-			adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, eventosP);
+//			adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, eventosP);
+			adaptador = new ArrayAdapter<String>(this, R.layout.spinner_listatexto, eventosP);
 			NombresEventos.setAdapter(adaptador);
 		} catch (Exception e) {
 			e.printStackTrace();

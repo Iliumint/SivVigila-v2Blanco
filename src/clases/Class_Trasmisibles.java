@@ -123,7 +123,8 @@ public class Class_Trasmisibles extends Activity {
 		//Agregamos los valores sin repetir
 		subgrupos.addAll(hs);
 		Collections.sort(subgrupos);
-		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,subgrupos);
+//		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,subgrupos);
+		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.spinner_listatexto,subgrupos);
 		spinSubgrupo.setAdapter(adapter);
 	}
 	

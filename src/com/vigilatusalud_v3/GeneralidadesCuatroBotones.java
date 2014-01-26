@@ -26,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 import clases.GeneralidadesSivigila;
+import clases.MiAdaptador;
 
 public class GeneralidadesCuatroBotones extends Activity {
 
@@ -155,23 +156,23 @@ public class GeneralidadesCuatroBotones extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int index,
 					long arg3) {
-				String[] aux=resultado.get(index).split("-");
-				String[] result=aux[0].split(" ");
-				
-				String descripcionCompat="";
-				for (int j=1; j<aux.length;j++) {		
-					
-					descripcionCompat=descripcionCompat+aux[j];
-				}
-//				Log.e("DESCRIPCIOPN",descripcionCompat);
-//				int i=0;
-//				for (String palabra : result) {					
-//					Log.e(i+"",palabra);
-//					i++;
+//				String[] aux=resultado.get(index).split("-");
+//				String[] result=aux[0].split(" ");
+//				
+//				String descripcionCompat="";
+//				for (int j=1; j<aux.length;j++) {		
+//					
+//					descripcionCompat=descripcionCompat+aux[j];
 //				}
-//				Se van a tomar el 1, 3, 5, 7,
-				
-				mostrar_resultadoBusqeuda(result[1], result[3], result[5], descripcionCompat);
+////				Log.e("DESCRIPCIOPN",descripcionCompat);
+////				int i=0;
+////				for (String palabra : result) {					
+////					Log.e(i+"",palabra);
+////					i++;
+////				}
+////				Se van a tomar el 1, 3, 5, 7,
+//				
+//				mostrar_resultadoBusqeuda(result[1], result[3], result[5], descripcionCompat);
 			}
 		});
 		
@@ -204,17 +205,30 @@ public class GeneralidadesCuatroBotones extends Activity {
 	 {		 
 		String nombre=texto.getText().toString();		
 		resultado = generar_busqeuda(nombre);
-		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, resultado);
-		lista.setAdapter(adapter);
+//		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, resultado);
+//		lista.setAdapter(adapter);
+		llenar_listaDatos(resultado, lista);
 	 }
+	 
+	 private void llenar_listaDatos(ArrayList<String> datos, ListView listaEventos)
+		{
+			 try
+			 {	 			 
+				MiAdaptador adaptador=(new MiAdaptador(this, datos));			
+			 	listaEventos.setAdapter(adaptador);
+			 }catch(Exception e)
+			 {
+				 Log.e("Error Lista","Problemas con Mi ADAPTER");
+			 }
+		}
 	 
 		public ArrayList<String> generar_busqeuda(String nom)
 		{
 			Log.e("Texto",nom);
 			ArrayList<String> items=new ArrayList<String>();
-			items.addAll(BasedeDatos.busqeuda_genralidades_tema(nom));
-			items.addAll(BasedeDatos.busqeuda_genralidades_subtema(nom));
-			
+//			items.addAll(BasedeDatos.busqeuda_genralidades_tema(nom));
+//			items.addAll(BasedeDatos.busqeuda_genralidades_subtema(nom));
+			items.addAll(BasedeDatos.busqueda_palabrasClave(nom));
 			return items;
 		}
 	 

@@ -453,6 +453,39 @@ public class BasedeDatos {
     }
 	
 	
+	static public ArrayList<String> busqueda_palabrasClave(String gener)
+    {   	
+		ArrayList<String> DomTema=new ArrayList<String>();		
+	 	SQLiteDatabase db2=ConectarConDataBase();
+    	Cursor c=db2.rawQuery("select * from informacion_sivigila where dom_inf = 'CONCEPTOS CLAVES' AND sub_tem like "+"'%"+gener+"%'",null);//+"' or dom_inf like "+"'%"+gener+"%'"
+    	Log.e("Consulta","Entro en la BD");
+    	if (c.moveToFirst()) 
+    	{    		   
+    		try
+    		{
+    	     do { 
+    	    	 DomTema.add(
+//    	    			 "*Dom: "+c.getString(1)+" \n"+
+//    	    			 "*Tem: "+c.getString(2)+" \n"+
+    	    			 "*PALABRA: \n "+c.getString(3)+" \n\n-DESCRIPCIÓN\n"+
+    	    			 c.getString(4)+"\n"
+    	    			 );
+    	    	 
+//    	    	 DomTema.add(c.getString(1)+"");//Dominio
+//    	    	 DomTema.add(c.getString(2)+"");//Tema
+//    	    	 DomTema.add(c.getString(3)+"");//Subtema
+//    	    	 DomTema.add(c.getString(4)+"");//descripcion
+    	    	 
+//    	    	 Log.e("Tema",c.getString(4)+"");
+    	     } while(c.moveToNext());
+    		}
+    		catch (Exception e) {
+    			Log.e(e.toString(),"se cayo la consulta informaicon Sivigila por tema");
+			}		    		    		
+    	}
+    	return DomTema;
+    }
+	
 	static public ArrayList<String> busqeuda_genralidades_tema(String gener)
     {   	
 		ArrayList<String> DomTema=new ArrayList<String>();		

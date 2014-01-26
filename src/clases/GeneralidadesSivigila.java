@@ -205,7 +205,8 @@ public class GeneralidadesSivigila extends Activity {
 		TemasListaString.clear();
 		TemasListaString.addAll(hs);
 		Collections.sort(TemasListaString);
-		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,TemasListaString);
+//		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,TemasListaString);
+		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.spinner_listatexto,TemasListaString);
 		SpintemaSpi.setAdapter(adapter);
 	}
 	
@@ -228,7 +229,8 @@ public class GeneralidadesSivigila extends Activity {
 				Collections.sort(SubtemaListaString);
 				SpinSubtem.setVisibility(View.VISIBLE);
 				subtema.setVisibility(View.VISIBLE);
-				ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,SubtemaListaString);
+//				ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,SubtemaListaString);
+				ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.spinner_listatexto,SubtemaListaString);
 				SpinSubtem.setAdapter(adapter);	
 //				DescripcionListaString=baseDatos.consultar_descripcion(SubtemaListaString.get(0));
 			}
